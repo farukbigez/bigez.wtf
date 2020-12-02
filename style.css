@@ -69,3 +69,53 @@ select {
   }
 }
 
+:root {
+  --clr-icons-text: #C9FFD4;
+  --clr-bg: #131B3A
+}
+
+/* mobile first */
+
+body {
+  margin: 1em;
+  background-color: var(--clr-bg);
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1rem, 10vw, 48px);
+  line-height: 1;
+
+}
+
+.left-section{
+  margin: 0;
+  width: 521px;
+  height: 87px;
+  left: 36px;
+  top: 360px;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: var(--clr-icons-text);
+
+}
+
+
+.profile-photo {
+  width: 360px;
+  border-radius: 250px;
+  align-items: center;
+}
+
+.links {
+  margin-right: px;
+}
