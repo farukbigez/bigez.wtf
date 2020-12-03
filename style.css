@@ -89,7 +89,7 @@ header {
 .title {
   margin: 0;
   font-size: clamp(1rem, 10vw, 48px);
-  line-height: 1;
+  line-height: 1.5;
 
 }
 
@@ -109,11 +109,11 @@ header {
 
 }
 
-
 .profile-photo {
   width: 360px;
   border-radius: 250px;
-  align-items: center;
+  max-width: 100%;
+  align-content: center;
 }
 
 .links {
