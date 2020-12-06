@@ -35,6 +35,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  animation: bg-animation ease-in-out 5000ms alternate infinite;
+
 }
 
 /* A elements that don't have a class get default styles */
@@ -82,14 +84,65 @@ body {
   line-height: 1.5;
 }
 
-header {
-  display: flex;
-}
 
 .title {
   margin: 0;
   font-size: clamp(1rem, 10vw, 48px);
   line-height: 1.5;
+  color: #ffffff;
+
+  text-shadow:
+   0.05em 0 0 rgba(255, 0, 0, 0.75),
+   -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+   0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+
+  /* animation: glitch 750ms infinite */
+
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05 0 rgba(0, 0, 255, 0.75);
+  }
 
 }
 
@@ -113,7 +166,13 @@ header {
   width: 360px;
   border-radius: 250px;
   max-width: 100%;
-  align-content: center;
+  top: 0;
+}
+
+.location {
+  color: var(--clr-icons-text);
+  font-family: Bebas Neue;
+  font-size: 36px;
 }
 
 .links {
