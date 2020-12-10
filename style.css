@@ -42,6 +42,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -91,13 +92,6 @@ body {
   line-height: 1.5;
   color: #ffffff;
   text-align: center;
-
-  text-shadow:
-   0.05em 0 0 rgba(255, 0, 0, 0.75),
-   -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-   0.025em 0.05 0 rgba(0, 0, 255, 0.75);
-
-
 }
 
 
@@ -107,6 +101,7 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
 
   color: var(--clr-icons-text);
 
@@ -117,6 +112,8 @@ body {
   border-radius: 250px;
   display: block;
   margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
   
   left: 0;
   right: 0;
@@ -132,5 +129,5 @@ body {
 }
 
 .links {
-  margin-right: px;
+  margin: 
 }
