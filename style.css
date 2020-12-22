@@ -83,6 +83,7 @@ body {
   margin: 1em;
   background-color: var(--clr-bg);
   line-height: 1.5;
+  overflow: hidden;
 }
 
 
